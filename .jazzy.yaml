@@ -1,0 +1,10 @@
+author: J. G. Pusey
+author_url: https://github.com/eBardX
+copyright: © 2018 J. G. Pusey
+github_url: https://github.com/eBardX/XestiNotify
+min_acl: public
+module: XestiNotify
+readme: README.md
+root_url: https://eBardX.github.io/XestiNotify/reference/
+sdk: iphoneos
+theme: fullwidth

@@ -1,0 +1,25 @@
+PODS:
+  - XestiMonitors (2.12.1):
+    - XestiMonitors/Core (= 2.12.1)
+  - XestiMonitors/Core (2.12.1)
+  - XestiNotify (0.1.0)
+
+DEPENDENCIES:
+  - XestiMonitors
+  - XestiNotify (from `../../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - XestiMonitors
+
+EXTERNAL SOURCES:
+  XestiNotify:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  XestiMonitors: bde46d2b08fb7782f3238f11cf2de4c751fc0a8e
+  XestiNotify: 3d4ef699c51db9e456a142b727353a4211b9093a
+
+PODFILE CHECKSUM: cd33a8274e417a6f34fc06f274094d47e82d14fb
+
+COCOAPODS: 1.5.3

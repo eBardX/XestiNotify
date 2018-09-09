@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>XestiNotify  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="XestiNotify  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          XestiNotify Docs
+        </a>
+         (64% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/eBardX/XestiNotify">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2FeBardX%2Egithub%2Eio%2FXestiNotify%2Freference%2Fdocsets%2FXestiNotify%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">XestiNotify Reference</a>
+      <img class="carat" src="img/carat.png" />
+      XestiNotify  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CheckRegistration.html">CheckRegistration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FileRegistration.html">FileRegistration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PortRegistration.html">PortRegistration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/QueueRegistration.html">QueueRegistration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Registration.html">Registration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Registration/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SignalRegistration.html">SignalRegistration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='xestinotify' class='heading'>XestiNotify</h1>
+
+<p><a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/Swift-4.x-orange.svg" alt="Swift 4.x"></a>
+<a href="http://cocoapods.org/pods/XestiNotify"><img src="https://img.shields.io/cocoapods/l/XestiNotify.svg" alt="License"></a>
+<a href="http://cocoapods.org/pods/XestiNotify"><img src="https://img.shields.io/cocoapods/p/XestiNotify.svg" alt="Platform"></a></p>
+
+<p><a href="https://travis-ci.org/eBardX/XestiNotify"><img src="https://img.shields.io/travis/eBardX/XestiNotify/master.svg?colorB=4BC51D" alt="Build Status"></a>
+<a href="https://codecov.io/github/eBardX/XestiNotify"><img src="https://img.shields.io/codecov/c/github/eBardX/XestiNotify/master.svg?colorB=4BC51D" alt="Code Coverage"></a>
+<a href="http://ebardx.github.io/XestiNotify/"><img src="https://img.shields.io/cocoapods/metrics/doc-percent/XestiNotify.svg?colorB=4BC51D" alt="Documented"></a></p>
+
+<p><a href="http://cocoapods.org/pods/XestiNotify"><img src="https://img.shields.io/cocoapods/v/XestiNotify.svg?colorB=4BC51D" alt="CocoaPods"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/carthage-compatible-brightgreen.svg" alt="Carthage"></a>
+<a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/spm-compatible-brightgreen.svg" alt="Swift Package Manager"></a></p>
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#reference-documentation">Reference Documentation</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a>
+
+<ul>
+<li><a href="#cocoapods">CocoaPods</a></li>
+<li><a href="#carthage">Carthage</a></li>
+<li><a href="#swift-package-manager">Swift Package Manager</a></li>
+</ul></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#credits">Credits</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='overview' class='heading'>Overview</h2>
+
+<p>The XestiNotify framework provides &hellip;</p>
+<h2 id='reference-documentation' class='heading'>Reference Documentation</h2>
+
+<p>Full <a href="https://eBardX.github.io/XestiNotify/">reference documentation</a> is available courtesy of <a href="https://github.com/realm/jazzy">Jazzy</a>.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 8.0+ / macOS 10.10+ / tvOS 9.0+ / watchOS 2.0+</li>
+<li>Xcode 9.0+</li>
+<li>Swift 4.0+</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p><a href="http://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. You can
+install it with the following command:</p>
+<pre class="highlight plaintext"><code>$ gem install cocoapods
+</code></pre>
+
+<p>To integrate XestiNotify into your Xcode project using CocoaPods, specify it in
+your <code>Podfile</code>:</p>
+<pre class="highlight plaintext"><code>source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target '&lt;Your Target Name&gt;' do
+    pod 'XestiNotify'
+end
+</code></pre>
+
+<p>Then, run the following command:</p>
+<pre class="highlight plaintext"><code>$ pod install
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your
+dependencies and provides you with binary frameworks.</p>
+
+<p>You can install Carthage with <a href="http://brew.sh/">Homebrew</a> using the following commands:</p>
+<pre class="highlight plaintext"><code>$ brew update
+$ brew install carthage
+</code></pre>
+
+<p>To integrate XestiNotify into your Xcode project using Carthage, specify it
+in your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "eBardX/XestiNotify"
+</code></pre>
+
+<p>Then, run the following command:</p>
+<pre class="highlight plaintext"><code>$ carthage update
+</code></pre>
+
+<p>Finally, drag the built <code>XestiNotify.framework</code> into your Xcode project.</p>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>The <a href="https://swift.org/package-manager/">Swift Package Manager</a> (SPM) is a tool for automating the
+distribution of Swift code and is integrated into the swift compiler. It does
+not yet support all platforms, but you <em>can</em> install XestiNotify on
+platforms that SPM <em>does</em> support.</p>
+
+<p>Once you have your Swift package set up, adding XestiNotify as a dependency is
+as easy as adding it to the <code>dependencies</code> value of your <code>Package.swift</code>.</p>
+<pre class="highlight plaintext"><code>dependencies: [
+    .package(url: "https://github.com/eBardX/XestiNotify.git", from: "1.0.0")
+]
+</code></pre>
+<h2 id='a-name-usage-usage-a' class='heading'><a name="usage">Usage</a></h2>
+<h2 id='credits' class='heading'>Credits</h2>
+
+<p>J. G. Pusey (<a href="mailto:ebardx@gmail.com">ebardx@gmail.com</a>)</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>XestiNotify is available under <a href="https://github.com/eBardX/XestiNotify/blob/master/LICENSE.md">the MIT license</a>.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2018 J. G. Pusey</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

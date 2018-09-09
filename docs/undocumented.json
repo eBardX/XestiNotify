@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/CheckRegistration.swift",
+      "line": 32,
+      "symbol": "CheckRegistration.check()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/FileRegistration.swift",
+      "line": 47,
+      "symbol": "FileRegistration.fileDescriptor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 20,
+      "symbol": "Registration.Error.failed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 21,
+      "symbol": "Registration.Error.invalidFile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 22,
+      "symbol": "Registration.Error.invalidName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 23,
+      "symbol": "Registration.Error.invalidPort",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 24,
+      "symbol": "Registration.Error.invalidRequest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 25,
+      "symbol": "Registration.Error.invalidSignal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 26,
+      "symbol": "Registration.Error.invalidToken",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jgp/Programming/Xesticode/Public/XestiNotify/Sources/XestiNotify/Registration.swift",
+      "line": 27,
+      "symbol": "Registration.Error.notAuthorized",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/jgp/Programming/Xesticode/Public/XestiNotify"
+}
