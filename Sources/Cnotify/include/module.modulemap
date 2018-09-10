@@ -1,4 +1,0 @@
-module Cnotify {
-  header "Cnotify.h"
-  export *
-}

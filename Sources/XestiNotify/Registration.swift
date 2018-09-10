@@ -7,7 +7,7 @@
 //  © 2018 J. G. Pusey (see LICENSE.md)
 //
 
-import Cnotify
+import DarwinNotify
 
 ///
 ///
@@ -30,38 +30,69 @@ public class Registration {
     ///
     ///
     ///
-    public static func post(name: String) throws {
+    public let name: String
+
+    ///
+    ///
+    ///
+    public func getState() throws -> UInt64 {
+        var tmpState: UInt64 = 0
+
+        try checkStatus(notify_get_state(token, &tmpState))
+
+        return tmpState
+    }
+
+    ///
+    ///
+    ///
+    public func post() throws {
         try checkStatus(notify_post(name))
     }
 
     ///
     ///
     ///
-    public let name: String
+    public func postState(_ state: UInt64) throws {
+        var status = notify_set_state(token, state)
 
-    ///
-    ///
-    ///
-    public var state: UInt64 {
-        get { return getState() }
-        set { setState(newValue) }
+        if status == NOTIFY_STATUS_OK {
+            status = notify_post(name)
+        }
+
+        try checkStatus(status)
     }
 
     ///
     ///
     ///
     public func resume() throws {
-        try Registration.checkStatus(notify_resume(token))
+        try checkStatus(notify_resume(token))
+    }
+
+    ///
+    ///
+    ///
+    public func setState(_ state: UInt64) throws {
+        try checkStatus(notify_set_state(token, state))
     }
 
     ///
     ///
     ///
     public func suspend() throws {
-        try Registration.checkStatus(notify_suspend(token))
+        try checkStatus(notify_suspend(token))
     }
 
-    internal static func checkStatus(_ status: UInt32) throws {
+    internal init(name: String,
+                  token: Int32) {
+        self.name = name
+        self.token = token
+    }
+
+    internal let token: Int32
+
+    internal func checkStatus(_ status: UInt32) throws {
         switch status {
         case UInt32(NOTIFY_STATUS_INVALID_FILE):
             throw Error.invalidFile
@@ -84,29 +115,12 @@ public class Registration {
         case UInt32(NOTIFY_STATUS_NOT_AUTHORIZED):
             throw Error.notAuthorized
 
+        case UInt32(NOTIFY_STATUS_OK):
+            break
+
         default:
             throw Error.failed
         }
-    }
-
-    internal init(name: String,
-                  token: Int32) {
-        self.name = name
-        self.token = token
-    }
-
-    internal let token: Int32
-
-    private func getState() -> UInt64 {
-        var tmpState: UInt64 = 0
-
-        notify_get_state(token, &tmpState)
-
-        return tmpState
-    }
-
-    private func setState(_ state: UInt64) {
-        notify_set_state(token, state)
     }
 
     deinit {

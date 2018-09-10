@@ -14,8 +14,8 @@ import PackageDescription
 let package = Package(name: "XestiNotify",
                       products: [.library(name: "XestiNotify",
                                           targets: ["XestiNotify"])],
-                      targets: [.target(name: "Cnotify",
+                      targets: [.target(name: "DarwinNotify",
                                         dependencies: []),
                                 .target(name: "XestiNotify",
-                                        dependencies: ["Cnotify"])],
+                                        dependencies: ["DarwinNotify"])],
                       swiftLanguageVersions: [4])

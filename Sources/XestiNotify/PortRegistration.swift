@@ -7,7 +7,7 @@
 //  © 2018 J. G. Pusey (see LICENSE.md)
 //
 
-import Cnotify
+import DarwinNotify
 
 ///
 ///
@@ -30,15 +30,17 @@ public class PortRegistration: Registration {
             tmpFlags = 0
         }
 
-        try Registration.checkStatus(notify_register_mach_port(name,
-                                                               &tmpPort,
-                                                               tmpFlags,
-                                                               &tmpToken))
+        let status = notify_register_mach_port(name,
+                                               &tmpPort,
+                                               tmpFlags,
+                                               &tmpToken)
 
         self.machPort = tmpPort
 
         super.init(name: name,
                    token: tmpToken)
+
+        try checkStatus(status)
     }
 
     ///

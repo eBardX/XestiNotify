@@ -1,0 +1,4 @@
+module DarwinNotify {
+  header "DarwinNotify.h"
+  export *
+}

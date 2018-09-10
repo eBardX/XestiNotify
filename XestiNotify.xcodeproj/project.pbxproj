@@ -94,6 +94,8 @@
 		F69BEF1021727951358D0D5C857230E6 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		9C64C677D8AB1BC12DDFEAF15515EBBF /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		C415D2A1F9F45A7037A4C12CE4E3E028 /* CheckRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckRegistration.swift; sourceTree = "<group>"; };
+		4A6EBC3D91F1CEEFACBC5C89905EB317 /* DarwinNotify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DarwinNotify.c; sourceTree = "<group>"; };
+		059DBE80177F2C20690A28D0AA11EF13 /* DarwinNotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarwinNotify.h; sourceTree = "<group>"; };
 		9C36490EB8513CC2B26D25EB52CAA5E8 /* FileRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileRegistration.swift; sourceTree = "<group>"; };
 		486CE68286B34FE08AA80EBB1E05B2E4 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		47E49E074AEA459B8B344D522710BA85 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		4FC606330D018646D510D8270D7746EA /* XestiNotify.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = XestiNotify.podspec; sourceTree = "<group>"; };
 		87B4635E58C4FFCDB9B5E279B7713B8C /* generate_docs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_docs.sh; sourceTree = "<group>"; };
 		2B1FC813B5B1A407E13093D66FF7A739 /* issue_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = issue_template.md; path = .github/issue_template.md; sourceTree = "<group>"; };
+		750287FEB0BD6F9D2AA4987482761E7E /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		3AAFAD7CDBE8B28167D21F8F29391B93 /* pull_request_template.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = pull_request_template.md; path = .github/pull_request_template.md; sourceTree = "<group>"; };
 		8825558CC8E5724D48CF0092EB1E2522 /* uniquify_projects.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = uniquify_projects.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +164,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C6202976FBB5C58FA3169BD07EBE56F9 /* DarwinNotify */ = {
+			isa = PBXGroup;
+			children = (
+				B8C1DBF7EEEB146AD151644E952BD7F4 /* include */,
+				4A6EBC3D91F1CEEFACBC5C89905EB317 /* DarwinNotify.c */,
+			);
+			path = DarwinNotify;
+			sourceTree = "<group>";
+		};
 		821B6DCB92241264625C6956C5EADBA2 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +199,7 @@
 		A8220558CB3E0B501492F7A6C55D1DA5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C6202976FBB5C58FA3169BD07EBE56F9 /* DarwinNotify */,
 				8C57016768F16F25BADF2038378BE31B /* Supporting Files */,
 				EEF638697F3BBFD1685E9849EE01941B /* XestiNotify */,
 			);
@@ -203,6 +216,15 @@
 				A8220558CB3E0B501492F7A6C55D1DA5 /* Sources */,
 				EB6263ADE46534565F3EFBC97E5FC742 /* Tests */,
 			);
+			sourceTree = "<group>";
+		};
+		B8C1DBF7EEEB146AD151644E952BD7F4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				059DBE80177F2C20690A28D0AA11EF13 /* DarwinNotify.h */,
+				750287FEB0BD6F9D2AA4987482761E7E /* module.modulemap */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 		EB6263ADE46534565F3EFBC97E5FC742 /* Tests */ = {
@@ -550,7 +572,7 @@
 				PRODUCT_NAME = XestiNotify;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -571,7 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xesticode.XestiNotify;
 				PRODUCT_NAME = XestiNotify;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -663,7 +685,7 @@
 				PRODUCT_NAME = XestiNotify;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -685,7 +707,7 @@
 				PRODUCT_NAME = XestiNotify;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -763,7 +785,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xesticode.XestiNotify;
 				PRODUCT_NAME = XestiNotify;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 			};
 			name = Release;
 		};
@@ -783,7 +805,7 @@
 				PRODUCT_NAME = XestiNotify;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -808,7 +830,7 @@
 				PRODUCT_NAME = XestiNotify;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 			};
 			name = Release;
 		};
@@ -836,7 +858,7 @@
 				PRODUCT_NAME = XestiNotify;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/Cnotify";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;

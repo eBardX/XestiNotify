@@ -7,7 +7,7 @@
 //  © 2018 J. G. Pusey (see LICENSE.md)
 //
 
-import Cnotify
+import DarwinNotify
 
 ///
 ///
@@ -30,15 +30,17 @@ public class FileRegistration: Registration {
             tmpFlags = 0
         }
 
-        try Registration.checkStatus(notify_register_file_descriptor(name,
-                                                                     &tmpFD,
-                                                                     tmpFlags,
-                                                                     &tmpToken))
+        let status = notify_register_file_descriptor(name,
+                                                     &tmpFD,
+                                                     tmpFlags,
+                                                     &tmpToken)
 
         self.fileDescriptor = tmpFD
 
         super.init(name: name,
                    token: tmpToken)
+
+        try checkStatus(status)
     }
 
     //

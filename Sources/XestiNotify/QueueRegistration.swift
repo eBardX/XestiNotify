@@ -7,7 +7,7 @@
 //  © 2018 J. G. Pusey (see LICENSE.md)
 //
 
-import Cnotify
+import DarwinNotify
 
 ///
 ///
@@ -21,15 +21,17 @@ public class QueueRegistration: Registration {
                 handler: @escaping () -> Void) throws {
         var tmpToken: Int32 = NOTIFY_TOKEN_INVALID
 
-        try Registration.checkStatus(notify_register_dispatch(name,
-                                                              &tmpToken,
-                                                              queue) {
-                                                                if tmpToken == $0 {
-                                                                    handler()
-                                                                }
-        })
+        let status = notify_register_dispatch(name,
+                                              &tmpToken,
+                                              queue) {
+                                                if tmpToken == $0 {
+                                                    handler()
+                                                }
+        }
 
         super.init(name: name,
                    token: tmpToken)
+
+        try checkStatus(status)
     }
 }
