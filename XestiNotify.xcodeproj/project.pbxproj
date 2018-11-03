@@ -164,15 +164,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6202976FBB5C58FA3169BD07EBE56F9 /* DarwinNotify */ = {
-			isa = PBXGroup;
-			children = (
-				B8C1DBF7EEEB146AD151644E952BD7F4 /* include */,
-				4A6EBC3D91F1CEEFACBC5C89905EB317 /* DarwinNotify.c */,
-			);
-			path = DarwinNotify;
-			sourceTree = "<group>";
-		};
 		821B6DCB92241264625C6956C5EADBA2 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +197,24 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		B8C1DBF7EEEB146AD151644E952BD7F4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				059DBE80177F2C20690A28D0AA11EF13 /* DarwinNotify.h */,
+				750287FEB0BD6F9D2AA4987482761E7E /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C6202976FBB5C58FA3169BD07EBE56F9 /* DarwinNotify */ = {
+			isa = PBXGroup;
+			children = (
+				B8C1DBF7EEEB146AD151644E952BD7F4 /* include */,
+				4A6EBC3D91F1CEEFACBC5C89905EB317 /* DarwinNotify.c */,
+			);
+			path = DarwinNotify;
+			sourceTree = "<group>";
+		};
 		CDD49C4F73A8534C8BE0A281CA56696B = {
 			isa = PBXGroup;
 			children = (
@@ -216,15 +225,6 @@
 				A8220558CB3E0B501492F7A6C55D1DA5 /* Sources */,
 				EB6263ADE46534565F3EFBC97E5FC742 /* Tests */,
 			);
-			sourceTree = "<group>";
-		};
-		B8C1DBF7EEEB146AD151644E952BD7F4 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				059DBE80177F2C20690A28D0AA11EF13 /* DarwinNotify.h */,
-				750287FEB0BD6F9D2AA4987482761E7E /* module.modulemap */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 		EB6263ADE46534565F3EFBC97E5FC742 /* Tests */ = {
@@ -655,7 +655,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -762,7 +762,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSION_INFO_PREFIX = "";

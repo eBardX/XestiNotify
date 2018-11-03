@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name                = 'XestiNotify'
   s.version             = '0.1.0'
-  s.swift_version       = '4.0'
+  s.swift_version       = '4.2'
   s.authors             = { 'J. G. Pusey' => 'ebardx@gmail.com' }
   s.license             = { :type => 'MIT',
                             :file => 'LICENSE.md' }
