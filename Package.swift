@@ -1,13 +1,6 @@
 // swift-tools-version:4.2
 
-//
-//  Package.swift
-//  XestiNotify
-//
-//  Created by J. G. Pusey on 2018-09-09.
-//
-//  © 2018 J. G. Pusey (see LICENSE.md)
-//
+// © 2018 J. G. Pusey (see LICENSE.md)
 
 import PackageDescription
 

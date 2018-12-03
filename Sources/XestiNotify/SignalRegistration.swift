@@ -1,11 +1,4 @@
-//
-//  SignalRegistration.swift
-//  XestiNotify
-//
-//  Created by J. G. Pusey on 2018-08-26.
-//
-//  © 2018 J. G. Pusey (see LICENSE.md)
-//
+// © 2018 J. G. Pusey (see LICENSE.md)
 
 import DarwinNotify
 
