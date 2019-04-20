@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFFD6A0375EACEA6FBA0C4B4A6CBBD44"
+               BlueprintIdentifier = "2611D778095F0438A0E3A4CCFB9FE152"
                BuildableName = "XestiNotify.framework"
                BlueprintName = "XestiNotify-watchOS"
                ReferencedContainer = "container:XestiNotify.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFFD6A0375EACEA6FBA0C4B4A6CBBD44"
+            BlueprintIdentifier = "2611D778095F0438A0E3A4CCFB9FE152"
             BuildableName = "XestiNotify.framework"
             BlueprintName = "XestiNotify-watchOS"
             ReferencedContainer = "container:XestiNotify.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFFD6A0375EACEA6FBA0C4B4A6CBBD44"
+            BlueprintIdentifier = "2611D778095F0438A0E3A4CCFB9FE152"
             BuildableName = "XestiNotify.framework"
             BlueprintName = "XestiNotify-watchOS"
             ReferencedContainer = "container:XestiNotify.xcodeproj">

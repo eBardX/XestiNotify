@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.0
 
 // © 2018 J. G. Pusey (see LICENSE.md)
 
@@ -10,5 +10,4 @@ let package = Package(name: "XestiNotify",
                       targets: [.target(name: "DarwinNotify",
                                         dependencies: []),
                                 .target(name: "XestiNotify",
-                                        dependencies: ["DarwinNotify"])],
-                      swiftLanguageVersions: [4])
+                                        dependencies: ["DarwinNotify"])])

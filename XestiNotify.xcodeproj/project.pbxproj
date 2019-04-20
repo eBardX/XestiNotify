@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 7A18803C7824A703973D913D741DFA1B /* Build configuration list for PBXAggregateTarget "XestiNotify" */;
 			buildPhases = (
-				56A810715EDAB76CA3AF6EDE9AFF3B60 /* SwiftLint */,
+				28ED22CD69B3963083E7FE72F7DB10D5 /* SwiftLint */,
 			);
 			dependencies = (
 				24E28F4ABD1A4604AA71886F0B2B6FB5 /* PBXTargetDependency */,
@@ -376,12 +376,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Xesticode;
 				TargetAttributes = {
 					2611D778095F0438A0E3A4CCFB9FE152 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					2953F79D9CE6A16659B2E31C54DF2B14 = {
@@ -390,27 +390,28 @@
 					};
 					4380A567C2AF27AEA020AC6C6F8C768B = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					472D990520F342BAD7CF7C68C4AFFCFB = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					863AD7BD68CB14D04489E403C12A617F = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = B5FB5E26823C5782C237ED875807A384 /* Build configuration list for PBXProject "XestiNotify" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CDD49C4F73A8534C8BE0A281CA56696B;
 			productRefGroup = 3E79D309DF572144584DECCD460EF8DA /* Products */;
@@ -458,7 +459,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		56A810715EDAB76CA3AF6EDE9AFF3B60 /* SwiftLint */ = {
+		28ED22CD69B3963083E7FE72F7DB10D5 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,7 +471,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint lint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint lint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -574,6 +575,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -595,6 +597,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -602,6 +605,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -686,6 +690,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -708,6 +713,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -717,6 +723,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -786,6 +793,7 @@
 				PRODUCT_NAME = XestiNotify;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -807,6 +815,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -831,6 +840,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -860,6 +870,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/DarwinNotify";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
